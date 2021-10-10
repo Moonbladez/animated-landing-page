@@ -1,7 +1,7 @@
 //MODULES
 import { useRef } from "react";
 import { TextureLoader } from "three";
-import { OrbitControls, Stars } from "@react-three/drei";
+import { Stars } from "@react-three/drei";
 import * as THREE from "three";
 
 //COMPONENTS
@@ -14,7 +14,7 @@ import EarthNightMap from "../../assets/textures/8k_earth_nightmap.jpg";
 import { useFrame, useLoader, useThree } from "@react-three/fiber";
 
 export const Earth = () => {
-    const [colorMap, normalMap, specularMap, cloudsMap, nightMap] = useLoader(TextureLoader, [
+    const [colorMap, normalMap, specularMap, cloudsMap] = useLoader(TextureLoader, [
         EarthDayMap,
         EarthNormalMap,
         EarthSpecularMap,
